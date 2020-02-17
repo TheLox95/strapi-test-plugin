@@ -2,8 +2,17 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/test",
-      "handler": "Test.index",
+      "path": "/test/resetDB",
+      "handler": "Test.resetDB",
+      "config": {
+        "policies": [],
+        "prefix": false
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/test/seedOfferings",
+      "handler": "Test.seedOfferings",
       "config": {
         "policies": [],
         "prefix": false
